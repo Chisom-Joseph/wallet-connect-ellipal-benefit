@@ -1,0 +1,43 @@
+.walletsSection {
+  max-width: 80em;
+  margin: 0 auto;
+  padding: 2em;
+}
+.walletsSection h1 {
+  text-align: center;
+}
+.walletsSection p {
+  text-align: center;
+  margin-bottom: 5em;
+}
+.wallets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-bottom: 5em;
+}
+.wallets img {
+  border-radius: 1em;
+}
+.wallet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1em;
+  cursor: pointer;
+  gap: 1em;
+  transition: transform 0.2s ease-in-out;
+}
+.wallet:hover {
+  transform: scale(1.1);
+}
+.wallet img {
+  width: 6em;
+  height: 6em;
+  object-fit: cover;
+}
+.wallet span {
+  text-align: center;
+}

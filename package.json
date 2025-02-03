@@ -1,0 +1,29 @@
+{
+  "name": "solana-giveaway",
+  "version": "1.0.0",
+  "description": "A giveaway platform",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chisom-Joseph/solana-giveaway.git"
+  },
+  "keywords": [
+    "solana-giveaway"
+  ],
+  "author": "solana-giveaway",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chisom-Joseph/solana-giveaway/issues"
+  },
+  "homepage": "https://github.com/Chisom-Joseph/solana-giveaway#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "nodemailer": "^6.9.16"
+  }
+}

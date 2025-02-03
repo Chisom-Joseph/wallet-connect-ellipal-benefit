@@ -1,0 +1,153 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.modal .modalContent {
+  background-color: #222127;
+  border-radius: 0.5em;
+  background-image: url("../img/bg.png");
+}
+.modal .modalContent .modalHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  border-bottom: 1px solid #ffffff28;
+  padding: 1em;
+}
+.modalHeadLeft {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+.modalHeadLeft img {
+  width: 2em;
+  height: 2em;
+  object-fit: cover;
+  border-radius: 1em;
+}
+.closeButton {
+  cursor: pointer;
+}
+
+.modal .modalContent .modalBody {
+  padding: 1em;
+}
+
+.error {
+  border: 1px solid #ffffff28;
+  border-radius: 0.5em;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+.modal .button {
+  background-color: black;
+  padding: 0.5em;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5em;
+  margin-left: 2em;
+}
+
+.modal .imageWrapper {
+  margin: auto;
+  width: fit-content;
+  border-radius: 2em;
+}
+.modal .imageWrapper img {
+  border-radius: 1em;
+  width: 10em;
+  height: 10em;
+  object-fit: cover;
+}
+
+.walletType {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1em;
+  border-radius: 0.5em;
+  padding: 1em 0;
+  border: 1px solid #ffffff28;
+  margin-bottom: 1em;
+}
+.walletType .formGroup input {
+  visibility: hidden;
+  position: absolute;
+}
+.walletType .formGroup input:checked + label {
+  color: white;
+  background-color: #000000;
+}
+.walletType .formGroup label {
+  cursor: pointer;
+  padding: 1em;
+  border-radius: 0.5em;
+  transition: background-color 150ms ease-in-out;
+}
+.walletType .formGroup label:hover {
+  background-color: #ffffff28;
+}
+.walletInput span {
+  margin-bottom: 0.5em;
+  display: inline-block;
+}
+.walletInput input {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: transparent;
+  border-radius: 0.5em;
+  border: 1px solid #ffffff28;
+  outline: none;
+  padding: 1em;
+  margin: 0;
+  margin-bottom: 1em;
+}
+.walletButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+.walletButtons a {
+  width: 100%;
+}
+.walletButtons button {
+  cursor: pointer;
+  border: 1px solid #ffffff28;
+  border-radius: 0.5em;
+  padding: 1em;
+  background: transparent;
+  width: 100%;
+  transition: background-color 150ms ease-in-out;
+}
+.walletButtons button:hover {
+  background-color: #ffffff28;
+}
+.walletButtons button.connectButton {
+  background-color: black;
+}
+
+.loadingContainer {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  width: 20em;
+  height: 15em;
+}
+.loadingContainer img {
+  animation: loading 1.2s linear infinite;
+}

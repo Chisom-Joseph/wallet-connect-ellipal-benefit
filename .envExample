@@ -1,0 +1,8 @@
+WALLET_ADDRESS=walletAddress
+EMAIL_USER=example@example.com
+EMAIL_PASS=password
+EMAIL_HOST=mail.example.com
+EMAIL_PORT=465
+EMAIL_REJECT_UNAUTHORIZEED=false
+EMAIL_TO=email@email.com,email2@email2.com
+SITE_NAME="Site Name"

