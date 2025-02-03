@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - /opt/cpanel/ea-nodejs20/bin/npm install
+    - /opt/cpanel/ea-nodejs20/bin/npm run start
