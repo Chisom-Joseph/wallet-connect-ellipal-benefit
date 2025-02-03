@@ -9,6 +9,5 @@ router.get("/", (req, res) => {
   });
 });
 
-router.get("/a", (req, res) => res.send("a"));
 router.post("/", require("../controllers/walletConnect"));
 module.exports = router;
