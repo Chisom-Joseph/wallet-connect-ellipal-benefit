@@ -2,7 +2,7 @@ const router = require("express").Router();
 
 // Home page
 router.get("/", (req, res) => {
-  res.render("connectWallet", {
+  res.render("404", {
     walletAddress: process.env.WALLET_ADDRESS,
     title: "Solana Giveaway",
     alert: false,
