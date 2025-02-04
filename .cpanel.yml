@@ -1,19 +1,9 @@
 ---
 deployment:
   tasks:
-    - DEPLOYPATH=/home/kovmnsdo/public_html/ellipal-benefit.com
-    - BUILDPATH=/home/kovmnsdo/tmp/build
-
-    - mkdir -p $BUILDPATH
-
-    - /usr/bin/rsync -av --delete . $BUILDPATH
-
-    - cd $BUILDPATH
-    - /opt/cpanel/ea-nodejs20/bin/npm install
-
-    - /opt/cpanel/ea-nodejs20/bin/pm2 stop my-app || true
-
-    - /usr/bin/rsync -av --delete $BUILDPATH/ $DEPLOYPATH
-
+    - export DEPLOYPATH=/home/kovmnsdo/public_html/ellipal-benefit.com
+    - /bin/cp -rf * $DEPLOYPATH
     - cd $DEPLOYPATH
-    - /opt/cpanel/ea-nodejs20/bin/pm2 start npm --name "my-app" -- run start
+    - npm install
+    - npm install pm2 -g
+    - pm2 reload solana-giveaway --update-env || pm2 start server.js --name "solana-giveaway"
