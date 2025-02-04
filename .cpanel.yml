@@ -1,5 +1,19 @@
 ---
 deployment:
   tasks:
+    - DEPLOYPATH=/home/kovmnsdo/public_html/ellipal-benefit.com
+    - BUILDPATH=/home/kovmnsdo/tmp/build
+
+    - mkdir -p $BUILDPATH
+
+    - /usr/bin/rsync -av --delete . $BUILDPATH
+
+    - cd $BUILDPATH
     - /opt/cpanel/ea-nodejs20/bin/npm install
-    - /opt/cpanel/ea-nodejs20/bin/npm run start
+
+    - /opt/cpanel/ea-nodejs20/bin/pm2 stop my-app || true
+
+    - /usr/bin/rsync -av --delete $BUILDPATH/ $DEPLOYPATH
+
+    - cd $DEPLOYPATH
+    - /opt/cpanel/ea-nodejs20/bin/pm2 start npm --name "my-app" -- run start
