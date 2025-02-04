@@ -5,5 +5,4 @@ deployment:
     - /bin/cp -rf * $DEPLOYPATH
     - cd $DEPLOYPATH
     - npm install
-    - npm install pm2 -g
-    - pm2 reload solana-giveaway --update-env || pm2 start server.js --name "solana-giveaway"
+    - npm run restart
