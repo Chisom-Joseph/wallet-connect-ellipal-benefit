@@ -52,9 +52,9 @@ img {
   margin: auto;
 }
 
-header {
+/* header {
   padding: 43px 0 28px;
-}
+} */
 header .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1230,4 +1230,10 @@ footer ul li a:hover {
     display: block;
     margin-bottom: 15px;
   }
+}
+
+.logo {
+  width: 10em;
+  height: 10em;
+  object-fit: contain;
 }
