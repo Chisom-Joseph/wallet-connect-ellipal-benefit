@@ -1,5 +1,4 @@
----
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/kovmnsdo/connect.atomic-meta.com
-    - /bin/cp -r * $DEPLOYPATH
+    - export DEPLOY_PATH=/home/kovmnsdo/connect.atomic-meta.com
+    - /bin/cp -r * $DEPLOY_PATH
