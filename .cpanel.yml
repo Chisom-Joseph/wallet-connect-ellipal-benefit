@@ -1,8 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/kovmnsdo/public_html/ellipal-benefit.com
-    - /bin/cp -rf * $DEPLOYPATH
-    - cd $DEPLOYPATH
-    - npm install
-    - npm run restart
+    - export DEPLOYPATH=/home/kovmnsdo/connect.atomic-meta.com
+    - /bin/cp -r * $DEPLOYPATH
